@@ -1,0 +1,9 @@
+---
+- hosts: install_java
+  become: yes
+  tasks:
+    - name: "install java"
+      yum:
+        name: java
+        state: latest
+    
